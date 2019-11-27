@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hybrid</title>
+    <script src='./invoke.js'></script>
+</head>
+
+<body>
+    <btn id="btn"> 扫一扫</btn>
+
+    <script>
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', function () {
+            window.invoke.share({
+                    title: 'hhh',
+                    content: '888',
+
+                }, () => {}
+
+            )
+        })
+    </script>
+
+</body>
+
+</html>
